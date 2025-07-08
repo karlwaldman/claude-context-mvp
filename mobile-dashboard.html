@@ -72,41 +72,41 @@
 
     <div class="panel">
         <h3>📋 Context Management</h3>
-        <a href="../../edit/main/claude-context.md" class="btn primary">
+        <a href="https://github.com/karlwaldman/claude-context-mvp/edit/main/claude-context.md" class="btn primary">
             📝 Update Project Context
         </a>
-        <a href="../../blob/main/claude-context.md" class="btn success">
+        <a href="https://github.com/karlwaldman/claude-context-mvp/blob/main/claude-context.md" class="btn success">
             👀 View Current Context
         </a>
         
         <h3>🎯 Task Management</h3>
-        <a href="../../edit/main/claude-tasks.md" class="btn primary">
+        <a href="https://github.com/karlwaldman/claude-context-mvp/edit/main/claude-tasks.md" class="btn primary">
             ✏️ Edit Task Queue
         </a>
-        <a href="../../blob/main/claude-tasks.md" class="btn success">
+        <a href="https://github.com/karlwaldman/claude-context-mvp/blob/main/claude-tasks.md" class="btn success">
             📋 View Current Tasks
         </a>
     </div>
 
     <div class="panel">
         <h3>📊 Project Monitoring</h3>
-        <a href="../../commits" class="btn primary">
+        <a href="https://github.com/karlwaldman/claude-context-mvp/commits" class="btn primary">
             📝 Recent Changes
         </a>
-        <a href="../../branches" class="btn primary">
+        <a href="https://github.com/karlwaldman/claude-context-mvp/branches" class="btn primary">
             🌿 All Branches
         </a>
-        <a href="../../issues" class="btn primary">
+        <a href="https://github.com/karlwaldman/claude-context-mvp/issues" class="btn primary">
             ❓ Issues & Questions
         </a>
     </div>
 
     <div class="panel">
         <h3>🚨 Quick Actions</h3>
-        <a href="../../issues/new?title=🤖 Claude Question&body=**What I need help with:**%0A%0A**Current context:**%0A%0A**Urgency:** Normal/High" class="btn warning">
+        <a href="https://github.com/karlwaldman/claude-context-mvp/issues/new?title=🤖 Claude Question&body=**What I need help with:**%0A%0A**Current context:**%0A%0A**Urgency:** Normal/High" class="btn warning">
             ❓ Ask Claude Question
         </a>
-        <a href="../../edit/main/claude-context.md" class="btn danger">
+        <a href="https://github.com/karlwaldman/claude-context-mvp/edit/main/claude-context.md" class="btn danger">
             ⏸️ Pause Development
         </a>
     </div>
@@ -123,15 +123,6 @@
         <p>Claude will see your updates in the next session!</p>
     </div>
 
-    <script>
-        // Fix relative links for GitHub pages
-        const currentUrl = window.location.href;
-        if (currentUrl.includes('github.io') || currentUrl.includes('github.com')) {
-            document.querySelectorAll('a[href^="../../"]').forEach(link => {
-                const path = link.href.replace(/.*\/([^\/]+\/[^\/]+)$/, '$1');
-                link.href = `https://github.com/${path}`;
-            });
-        }
-    </script>
+    <!-- Links are now absolute, no JavaScript needed -->
 </body>
 </html>
