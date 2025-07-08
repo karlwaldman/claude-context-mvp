@@ -7,18 +7,18 @@
 # Navigate to your existing project
 cd ~/your-existing-project
 
-# Copy the context files from this MVP
-curl -O https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/claude-context.md
-curl -O https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/claude-tasks.md
-curl -O https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/claude-decisions.md
+# Copy the TEMPLATE files (not the specific MVP files)
+curl -o claude-context.md https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/templates/claude-context-template.md
+curl -o claude-tasks.md https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/templates/claude-tasks-template.md
+curl -o claude-decisions.md https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/templates/claude-decisions-template.md
 curl -O https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/claude-safety-simple.md
 curl -O https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/claude-workflow-template.md
 
 # Add to .gitignore if you want these private
 echo "claude-*-working.md" >> .gitignore
 
-# Customize claude-context.md for your project
-# Edit the file to describe YOUR project's goals
+# IMPORTANT: Customize claude-context.md for YOUR project
+# Replace all [PLACEHOLDER] values with your project info
 
 # Commit the context system
 git add claude-*.md .gitignore
@@ -83,10 +83,10 @@ mkdir my-new-project
 cd my-new-project
 git init
 
-# Download context system
-curl -O https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/claude-context.md
-curl -O https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/claude-tasks.md
-curl -O https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/claude-decisions.md
+# Download TEMPLATE files
+curl -o claude-context.md https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/templates/claude-context-template.md
+curl -o claude-tasks.md https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/templates/claude-tasks-template.md
+curl -o claude-decisions.md https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/templates/claude-decisions-template.md
 curl -O https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/claude-safety-simple.md
 curl -O https://raw.githubusercontent.com/karlwaldman/claude-context-mvp/main/claude-workflow-template.md
 
